@@ -1,0 +1,145 @@
+export const profile = {
+  name: 'Santiago Moreno Echeverría',
+  shortName: 'Santiago Moreno',
+  role: 'Ingeniero Multimedia',
+  location: 'Colombia',
+  intro:
+    'Integro programación, desarrollo de videojuegos y animación para crear experiencias digitales interactivas, funcionales y visualmente atractivas.',
+  available: true,
+  email: 'santiagomorenoe@gmail.com',
+  phone: '+57 314 589 2491',
+  phoneRaw: '573145892491',
+  cv: '/cv.pdf',
+  social: {
+    linkedin: 'https://www.linkedin.com/in/santiago-moreno-echeverria',
+    github: 'https://github.com/samefn',
+    itch: 'https://samefn.itch.io/',
+  },
+
+  about: [
+    'Mi marca personal nace de la unión entre la ingeniería multimedia, la creatividad digital y la innovación tecnológica.',
+    'Me enfoco en crear experiencias audiovisuales inmersivas, especialmente en videojuegos, que permitan a las personas entretenerse, divertirse y aprender a través de la tecnología y la creatividad. Busco ser un referente en el desarrollo de experiencias digitales innovadoras, destacándome por la calidad, la creatividad y la mejora constante.',
+  ],
+  values: ['Respeto', 'Responsabilidad', 'Mejora continua', 'Creatividad', 'Disciplina', 'Ética profesional'],
+  languages: [
+    { name: 'Español', level: 'Nativo', percent: 100 },
+    { name: 'Inglés', level: 'B2 / C1', percent: 80 },
+  ],
+  stats: [
+    { value: '4', label: 'Proyectos destacados' },
+    { value: '6', label: 'Áreas de trabajo' },
+    { value: '2', label: 'Idiomas' },
+  ],
+};
+
+export const orbitAreas = [
+  { label: 'Videojuegos', icon: 'bi-controller', color: 'var(--orange)' },
+  { label: 'Producciones audiovisuales', icon: 'bi-camera-reels', color: 'var(--violet-soft)' },
+  { label: 'Animación', icon: 'bi-bezier2', color: 'var(--amber)' },
+  { label: 'Modelado 3D', icon: 'bi-box', color: 'var(--green)' },
+  { label: 'Frontend', icon: 'bi-window', color: 'var(--orange)' },
+  { label: 'Backend', icon: 'bi-database', color: 'var(--violet-soft)' },
+];
+
+export const skills = [
+  {
+    id: 'videojuegos',
+    group: 'Videojuegos',
+    icon: 'bi-controller',
+    accent: '#F37321',
+    summary: 'Desarrollo de videojuegos: mecánicas, interacciones y construcción de niveles.',
+    tools: [{ name: 'Unity', abbr: 'U', icon: '/icons/tools/unity.png' },
+      { name: 'Phaser', abbr: 'Ph', icon: '/icons/tools/phaser.png', wide: true }],
+    items: ['Mecánicas de juego', 'Interacciones', 'Diseño de niveles', 'Implementación de assets', 'Pruebas (QA)'],
+  },
+  {
+    id: 'audiovisual',
+    group: 'Producción audiovisual',
+    icon: 'bi-camera-reels',
+    accent: '#A78BFA',
+    summary: 'Del rodaje a la posproducción: cámara, fotografía y montaje.',
+    tools: [
+      { name: 'Premiere Pro', abbr: 'Pr', icon: '/icons/tools/premiere.png' },
+      { name: 'After Effects', abbr: 'Ae', icon: '/icons/tools/aftereffects.png' },
+      { name: 'Photoshop', abbr: 'Ps', icon: '/icons/tools/photoshop.png' },
+    ],
+    items: ['Dirección de cámara', 'Cinematografía', 'Edición', 'Narrativa visual'],
+  },
+  {
+    id: 'animacion',
+    group: 'Animación',
+    icon: 'bi-bezier2',
+    accent: '#FB923C',
+    summary: 'Animación para piezas audiovisuales y videojuegos.',
+    tools: [
+      { name: 'After Effects', abbr: 'Ae', icon: '/icons/tools/aftereffects.png' },
+      { name: 'Maya', abbr: 'Ma', icon: '/icons/tools/maya.png' },
+      { name: 'Blender', abbr: 'Bl', icon: '/icons/tools/blender.png' },
+    ],
+    items: ['Animación', 'Composición', 'Timing y ritmo'],
+  },
+  {
+    id: 'modelado',
+    group: 'Modelado 3D',
+    icon: 'bi-box',
+    accent: '#22C55E',
+    summary: 'Modelos y entornos 3D listos para usar en videojuegos y animación.',
+    tools: [
+      { name: 'Blender', abbr: 'Bl', icon: '/icons/tools/blender.png' },
+      { name: 'Maya', abbr: 'Ma', icon: '/icons/tools/maya.png' },
+    ],
+    items: ['Modelado 3D', 'Assets para videojuegos', 'Entornos 3D'],
+  },
+  {
+    id: 'diseno',
+    group: 'Diseño gráfico',
+    icon: 'bi-vector-pen',
+    accent: '#F37321',
+    summary: 'Identidad visual, piezas gráficas y retoque de imagen.',
+    tools: [
+      { name: 'Illustrator', abbr: 'Ai', icon: '/icons/tools/illustrator.png' },
+      { name: 'Photoshop', abbr: 'Ps', icon: '/icons/tools/photoshop.png' },
+    ],
+    items: ['Identidad de marca', 'Diseño vectorial', 'Retoque fotográfico'],
+  },
+  {
+    id: 'frontend',
+    group: 'Frontend',
+    icon: 'bi-window',
+    accent: '#A78BFA',
+    summary: 'Interfaces web responsivas y componentes interactivos.',
+    tools: [
+      { name: 'HTML', abbr: 'HT', icon: '/icons/tools/html.png' },
+      { name: 'CSS', abbr: 'CS', icon: '/icons/tools/css.png' },
+      { name: 'JavaScript', abbr: 'JS', icon: '/icons/tools/js.png' },
+      { name: 'React', abbr: 'Re', icon: '/icons/tools/react.png' },
+      { name: 'Three.js', abbr: '3J', icon: '/icons/tools/threejs.png' },
+      { name: 'Bootstrap', abbr: 'Bs', icon: '/icons/tools/bootstrap.png' },
+      { name: 'Git y GitHub', abbr: 'Gt', icon: '/icons/tools/github.png' },
+    ],
+    items: ['Diseño responsive', 'Componentes interactivos', 'Maquetación'],
+  },
+  {
+    id: 'backend',
+    group: 'Backend',
+    icon: 'bi-database',
+    accent: '#22C55E',
+    summary: 'Datos detrás de la interfaz: registro, almacenamiento y consulta.',
+    tools: [
+      { name: 'MySQL', abbr: 'My', icon: '/icons/tools/mysql.png' },
+      { name: 'Firebase', abbr: 'Fb', icon: '/icons/tools/firebase.png' },
+      { name: 'Node.js', abbr: 'No', icon: '/icons/tools/nodejs.png' },
+      { name: 'Express', abbr: 'Ex', icon: '/icons/tools/express.png' },
+    ],
+    items: ['Bases de datos SQL y NoSQL', 'APIs REST', 'Migración de datos (ETL)', 'Autenticación de usuarios', 'Integración con el frontend'],
+  },
+  {
+    id: 'equipo',
+    group: 'Trabajo en equipo',
+    icon: 'bi-people',
+    accent: '#FB923C',
+    summary: 'Proyectos académicos y audiovisuales desarrollados en equipo.',
+    tools: [],
+    items: ['Proyectos colaborativos', 'Comunicación', 'Resolución de problemas', 'Mejora continua'],
+  },
+];
