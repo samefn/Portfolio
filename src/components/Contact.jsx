@@ -74,7 +74,7 @@ export default function Contact() {
             ))}
           </div>
 
-          <a href={profile.cv} download className="btn-neon mt-4">
+          <a href={profile.cv} download="CV-Santiago-Moreno-Echeverria.pdf" className="btn-neon mt-4">
             <i className="bi bi-file-earmark-arrow-down" aria-hidden="true" /> Descargar CV (PDF)
           </a>
         </div>

@@ -1519,6 +1519,34 @@
   margin-bottom: 0.35rem;
 }
 
+.edu-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.edu-degree {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0;
+}
+
+.edu-school {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin: 0.15rem 0 0;
+}
+
+.edu-period {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--orange);
+}
+
 .lang-level {
   font-family: var(--font-display);
   font-weight: 700;

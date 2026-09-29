@@ -31,6 +31,25 @@ export default function About() {
             ))}
 
             <div className="row g-3 mt-3">
+              <div className="col-12">
+                <div className="info-card">
+                  <h3 className="info-title">
+                    <i className="bi bi-mortarboard" aria-hidden="true" /> Formación
+                  </h3>
+                  <div className="edu-row">
+                    <div>
+                      <p className="edu-degree">{profile.education.degree}</p>
+                      <p className="edu-school">{profile.education.school}</p>
+                    </div>
+                    <span className="edu-period">{profile.education.period}</span>
+                  </div>
+                  <ul className="tag-list">
+                    {profile.education.focus.map((f) => (
+                      <li key={f} className="tag">{f}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
               <div className="col-md-6">
                 <div className="info-card">
                   <h3 className="info-title">

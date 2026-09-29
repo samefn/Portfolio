@@ -16,7 +16,7 @@ export default function ProjectDetail() {
       ? `${project.title} — ${profile.name}`
       : `Proyecto no encontrado — ${profile.name}`;
     return () => {
-      document.title = `${profile.name} — ${profile.role}`;
+      document.title = `${profile.name} — ${profile.shortRole}`;
     };
   }, [project]);
 

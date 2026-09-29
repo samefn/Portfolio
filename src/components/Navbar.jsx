@@ -47,7 +47,7 @@ export default function Navbar() {
           <img src="/icons/sme-white.svg" alt="" className="brand-logo" width="84" height="32" />
           <span className="brand-text">
             {profile.shortName}
-            <small>{profile.role}</small>
+            <small>{profile.shortRole}</small>
           </span>
         </Link>
 
@@ -79,7 +79,7 @@ export default function Navbar() {
               </li>
             ))}
           </ul>
-          <a href={profile.cv} className="btn-neon btn-sm-neon" download>
+          <a href={profile.cv} className="btn-neon btn-sm-neon" download="CV-Santiago-Moreno-Echeverria.pdf">
             <i className="bi bi-download" aria-hidden="true" /> CV
           </a>
         </div>
