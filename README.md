@@ -4,7 +4,7 @@
 
 **Sitio en vivo:** [portfolio-santiago-me.vercel.app](https://portfolio-santiago-me.vercel.app/)
 
-Portafolio personal de un **estudiante de Ingeniería Multimedia** (Universidad de San Buenaventura, Bogotá): videojuegos, producción audiovisual y desarrollo web. Es una aplicación de una sola página hecha con React y Vite. Cada proyecto se puede ver en vivo: el juego, el video o el sitio web.
+Portafolio personal de un **estudiante de Ingeniería Multimedia** (Universidad de San Buenaventura, Bogotá): videojuegos, producción audiovisual, modelado 3D y desarrollo web. Es una aplicación de una sola página hecha con React y Vite. Cada proyecto se puede ver en vivo: el juego, el video o el sitio web.
 
 ## Proyectos destacados
 
@@ -12,12 +12,15 @@ Portafolio personal de un **estudiante de Ingeniería Multimedia** (Universidad 
 |---|---|---|---|
 | **Itza: El despertar de la lluvia** | Videojuego 3D | Unity, C#, WebGL | [Jugar](https://samefn.itch.io/itza-el-despertar-de-la-lluvia) · [Código](https://github.com/samefn/Itza-el-despertar-de-la-lluvia) |
 | **Hasta alcanzarte** | Cortometraje | Dirección de cámara, Premiere Pro, DaVinci Resolve | [Ver](https://www.youtube.com/watch?v=4yPrIC1MTJ8) |
+| **Spider-Gwen** | Modelo 3D | Maya, Blender (modelado, rigging, blend shapes) | Visor 3D en el portafolio |
+| **Zelda** | Modelo 3D | Maya (rigging y blend shapes sobre un modelo de clase) | Visor 3D en el portafolio |
 | **Invitación de 15 años** | Sitio web | React, HTML, CSS, base de datos | [Sitio](https://luciana15yearsinvitation.vercel.app/) · [Código](https://github.com/samefn/Party_Invitation) |
 | **SoccerDB** | Aplicación web | Node.js, Express, MySQL, Firebase | [Demo](https://soccerdb-demo.onrender.com/login.html) · [Código](https://github.com/samefn/ProyectDB3) |
 
 ## Características
 
 - **Previsualizaciones:** el tráiler o el juego de itch.io, videos de YouTube que se cargan al pulsar play, y sitios web en vivo con vista de escritorio, tableta y móvil.
+- **Visor 3D interactivo:** modelos glTF con Three.js. Se pueden girar, ver el esqueleto y la malla, animar el rig y mover cada blend shape facial. Three.js solo se descarga cuando el visitante abre el visor.
 - **Galería con filtros y carrusel:** se navega con flechas, puntos, deslizando el dedo o con el teclado.
 - **Vista rápida y páginas de detalle:** cada proyecto se abre en una ventana modal y también tiene su propia URL (`/proyectos/:slug`).
 - **Habilidades interactivas:** cada área abre una ventana con sus herramientas y competencias.
@@ -28,6 +31,7 @@ Portafolio personal de un **estudiante de Ingeniería Multimedia** (Universidad 
 
 - [React 18](https://react.dev/) + [Vite 5](https://vitejs.dev/)
 - [React Router 6](https://reactrouter.com/)
+- [Three.js](https://threejs.org/) (visor de modelos glTF)
 - [Bootstrap 5](https://getbootstrap.com/) (cuadrícula y utilidades) + [Bootstrap Icons](https://icons.getbootstrap.com/)
 - CSS propio con variables de diseño (`src/styles/global.css`)
 - Publicado en [Vercel](https://vercel.com/)
@@ -55,6 +59,7 @@ npm run dev        # desarrollo en http://localhost:5173
 ├── public/              Archivos estáticos (se copian tal cual a dist/)
 │   ├── icons/           Logotipo SME e íconos de herramientas
 │   ├── images/          Fotografía, portadas e imagen para redes
+│   ├── models/          Modelos 3D en formato .glb
 │   └── cv.pdf
 ├── src/
 │   ├── components/      Componentes de la interfaz

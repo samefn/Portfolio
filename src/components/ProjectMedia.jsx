@@ -1,6 +1,7 @@
 import GameEmbed from './GameEmbed.jsx';
 import VideoPlayer from './VideoPlayer.jsx';
 import WebsitePreview from './WebsitePreview.jsx';
+import ModelViewer from './ModelViewer.jsx';
 
 export default function ProjectMedia({ project }) {
   switch (project.type) {
@@ -33,6 +34,8 @@ export default function ProjectMedia({ project }) {
     }
     case 'film':
       return <VideoPlayer video={project.video} title={project.title} />;
+    case '3d':
+      return <ModelViewer model={project.model} title={project.title} cover={project.cover} />;
     case 'web':
       return <WebsitePreview website={project.website} title={project.title} />;
     default:

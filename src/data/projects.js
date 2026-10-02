@@ -2,6 +2,7 @@ export const categories = [
   { id: 'all', label: 'Todos', icon: 'bi-grid' },
   { id: 'game', label: 'Videojuegos', icon: 'bi-controller' },
   { id: 'film', label: 'Audiovisual', icon: 'bi-film' },
+  { id: '3d', label: '3D', icon: 'bi-box' },
   { id: 'web', label: 'Web', icon: 'bi-window' },
 ];
 
@@ -74,6 +75,131 @@ export const projects = [
       demo: 'https://www.youtube.com/watch?v=4yPrIC1MTJ8',
       repo: '',
     },
+  },
+  {
+    slug: 'spider-gwen',
+    type: '3d',
+    title: 'Spider-Gwen: modelado y rigging',
+    year: null,
+    context: 'Personaje 3D · trabajo individual',
+    role: 'Modelado, rigging y blend shapes',
+    summary:
+      'Personaje modelado y riggeado por completo en Maya, con 75 huesos y 21 blend shapes faciales. Se puede explorar en 3D.',
+    description: [
+      'Modelé y riggeé por completo a Spider-Gwen en Maya. El esqueleto tiene 75 huesos, con dedos articulados, ojos, pupilas y mandíbula. El rig incluye controles FK e IK y una interfaz facial para las vocales y los parpadeos.',
+      'Para la cara creé 21 blend shapes: las vocales A, E, I, O y U para hablar, parpadeos de ojos y pestañas, y controles independientes para labios y cejas.',
+      'El visor muestra el modelo exportado a glTF: puedes girarlo, ver el esqueleto y la malla, animar el rig y mover cada blend shape. Los controles de Maya no se exportan a la web, por eso aquí se manejan con deslizadores.',
+    ],
+    contributions: [
+      'Modelado 3D',
+      'Esqueleto de 75 huesos',
+      'Skinning',
+      'Controles FK / IK',
+      'Blend shapes faciales',
+      'Exportación a glTF',
+    ],
+    tags: ['Maya', 'Blender', 'Rigging', 'Blend shapes'],
+    cover: '/images/spider-gwen.webp',
+    gallery: [
+      { src: '/images/spider-gwen.webp', alt: 'Spider-Gwen en vista de tres cuartos, frente y perfil' },
+      { src: '/images/spider-gwen-expresiones.webp', alt: 'Blend shapes de Spider-Gwen: neutral, vocales A, E y O, cejas y parpadeo' },
+    ],
+    accent: '#A78BFA',
+    model: {
+      src: '/models/spider-gwen.glb',
+      size: '4,3 MB',
+      note: 'Fan art sin fines comerciales. Spider-Gwen es un personaje de Marvel.',
+      cycleTime: 0.6,
+      morphs: [
+        {
+          title: 'Vocales',
+          items: [
+            { label: 'A', targets: ['Vocal_A'], role: 'cycle' },
+            { label: 'E', targets: ['Vocal_E'], role: 'cycle' },
+            { label: 'I', targets: ['Vocal_I'], role: 'cycle' },
+            { label: 'O', targets: ['Vocal_O'], role: 'cycle' },
+            { label: 'U', targets: ['Vocal_U'], role: 'cycle' },
+          ],
+        },
+        {
+          title: 'Ojos',
+          items: [
+            { label: 'Parpadeo izquierdo', targets: ['Parpadeo_ojo_izq', 'Pestaña_parpadeo_ojo_izq'], role: 'blink' },
+            { label: 'Parpadeo derecho', targets: ['Parpadeo_ojo_der', 'Pestaña_parpadeo_ojo_der'], role: 'blink' },
+          ],
+        },
+        {
+          title: 'Cejas',
+          items: [
+            { label: 'Interior izquierda', targets: ['Ceja_parte_int_izq'] },
+            { label: 'Media izquierda', targets: ['Ceja_parte_media_izq'] },
+            { label: 'Exterior izquierda', targets: ['Ceja_parte_ext_izq'] },
+            { label: 'Interior derecha', targets: ['Ceja_parte_int_der'] },
+            { label: 'Media derecha', targets: ['Ceja_parte_media_der'] },
+            { label: 'Exterior derecha', targets: ['Ceja_parte_ext_der'] },
+          ],
+        },
+        {
+          title: 'Labios',
+          items: [
+            { label: 'Superior izquierdo', targets: ['Labio_sup_izq'] },
+            { label: 'Superior centro', targets: ['Labio_sup_mitad'] },
+            { label: 'Superior derecho', targets: ['Labio_sup_der'] },
+            { label: 'Inferior izquierdo', targets: ['Labio_inf_izq'] },
+            { label: 'Inferior centro', targets: ['Labio_inf_mitad'] },
+            { label: 'Inferior derecho', targets: ['Labio_inf_der'] },
+          ],
+        },
+      ],
+    },
+    links: { demo: '', repo: '' },
+  },
+  {
+    slug: 'zelda-rig',
+    type: '3d',
+    title: 'Zelda: rigging y blend shapes',
+    year: null,
+    context: 'Proyecto académico · modelo base proporcionado en clase',
+    role: 'Rigging y blend shapes',
+    summary:
+      'Rig completo y expresiones faciales para un personaje entregado ya modelado en clase. Se puede explorar en 3D.',
+    description: [
+      'Para este proyecto de clase recibimos el modelo de Zelda ya terminado. Yo hice todo el rigging: un esqueleto de 75 huesos con dedos, ojos y mandíbula, y el skinning de cada parte del cuerpo y la ropa.',
+      'También creé sus blend shapes faciales: sonrisa, tristeza, furia, parpadeo de cada ojo y una ceja levantada al estilo de "La Roca", combinando la deformación de la cara con la de las cejas.',
+    ],
+    contributions: ['Esqueleto de 75 huesos', 'Skinning', 'Blend shapes faciales', 'Exportación a glTF'],
+    tags: ['Maya', 'Rigging', 'Blend shapes'],
+    cover: '/images/zelda-rig.webp',
+    gallery: [
+      { src: '/images/zelda-rig.webp', alt: 'Zelda en vista de tres cuartos, frente y perfil' },
+      { src: '/images/zelda-expresiones.webp', alt: 'Blend shapes de Zelda: neutral, sonrisa, tristeza, furia, ceja de La Roca y parpadeo' },
+    ],
+    accent: '#22C55E',
+    model: {
+      src: '/models/zelda.glb',
+      size: '0,9 MB',
+      note: 'Modelo base proporcionado en clase; rigging y blend shapes de Santiago Moreno. Zelda es un personaje de Nintendo; trabajo académico sin fines comerciales.',
+      cycleTime: 1.4,
+      morphs: [
+        {
+          title: 'Expresiones',
+          items: [
+            { label: 'Sonrisa', targets: ['Sonreir'], role: 'cycle' },
+            { label: 'Tristeza', targets: ['Triste'], role: 'cycle' },
+            { label: 'Furia', targets: ['Furia', 'Furia_cejas'], role: 'cycle' },
+            { label: 'Ceja de La Roca', targets: ['LaRoca', 'LaRocaCeja'], role: 'cycle' },
+          ],
+        },
+        {
+          title: 'Ojos',
+          items: [
+            { label: 'Parpadeo izquierdo', targets: ['Parpadeo_izq'], role: 'blink' },
+            { label: 'Parpadeo derecho', targets: ['Parpadeo_der'], role: 'blink' },
+          ],
+        },
+      ],
+    },
+    links: { demo: '', repo: '' },
   },
   {
     slug: 'invitacion-xv',
@@ -155,4 +281,5 @@ export const typeLabel = {
   game: 'Videojuego',
   film: 'Cortometraje',
   web: 'Página web',
+  '3d': 'Modelo 3D',
 };

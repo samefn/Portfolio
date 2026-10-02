@@ -27,7 +27,7 @@ export default function Hero() {
               <span className="text-gradient">{profile.name}</span>
             </h1>
             <p className="hero-sub fade-up" style={{ '--d': '220ms' }}>
-              Creo mundos que se <em>juegan</em>, se <em>ven</em> y se <em>navegan</em>.
+              Transformo <em>ideas</em> en experiencias que <em>conectan</em>.
             </p>
             <p className="hero-lead fade-up" style={{ '--d': '280ms' }}>
               {profile.intro}

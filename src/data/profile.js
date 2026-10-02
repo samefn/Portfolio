@@ -39,7 +39,7 @@ export const profile = {
     { name: 'Inglés', level: 'B2 / C1', percent: 80 },
   ],
   stats: [
-    { value: '4', label: 'Proyectos destacados' },
+    { value: '6', label: 'Proyectos destacados' },
     { value: '6', label: 'Áreas de trabajo' },
     { value: '2', label: 'Idiomas' },
   ],

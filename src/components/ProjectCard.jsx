@@ -1,6 +1,6 @@
 import { typeLabel } from '../data/projects.js';
 
-const typeIcon = { game: 'bi-controller', film: 'bi-film', web: 'bi-window' };
+const typeIcon = { game: 'bi-controller', film: 'bi-film', web: 'bi-window', '3d': 'bi-box' };
 const ytFallback = (e) => {
   const img = e.currentTarget;
   if (img.src.includes('maxresdefault') && (e.type === 'error' || img.naturalWidth <= 120)) {
